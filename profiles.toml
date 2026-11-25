@@ -1,0 +1,17 @@
+default = "p8192"
+
+# N=8192, Modulus Chain=[49, 40, 40, 40, 49], Scaling Factor=2^40
+[profiles.p8192]
+poly_modulus_degree = 8192
+coeff_modulus_bits = [49, 40, 40, 40, 49]
+scale_bits = 40
+security_level = 128
+max_abs_value = 1.0e9
+
+# N=816384192, Modulus Chain=[60, 50, 50, 50, 60], Scaling Factor=2^50
+[profiles.p16384]
+poly_modulus_degree = 16384
+coeff_modulus_bits = [60, 50, 50, 50, 60]
+scale_bits = 50
+security_level = 128
+max_abs_value = 1.0e9
